@@ -150,7 +150,7 @@ app.get("/balance", (req, res) => {
     // console.log(customer.statement)
     const balance = getBalance(customer.statement);
 
-   return res.json(balance);
+   return res.json({balance: balance});
 });
 
 app.listen(3333);
